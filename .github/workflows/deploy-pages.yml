@@ -30,7 +30,7 @@ jobs:
       - name: Preparar archivos estáticos
         run: |
           mkdir -p _site/assets
-          cp index.html styles.css script.js site-config.js .nojekyll _site/
+          cp index.html styles.css pricing.css script.js site-config.js .nojekyll _site/
           cp assets/hafdio-editorial.jpg _site/assets/
 
       - name: Subir sitio

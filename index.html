@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- SEO: edita nombre y ciudad también en site-config.js si cambian -->
   <title>Hafdio | Diseño gráfico y desarrollo web en Fusagasugá, Colombia</title>
-  <meta name="description" content="Diseño de marca, redes sociales, material educativo, sitios web y aplicaciones personalizadas en Fusagasugá. Soluciones creativas hechas a la medida.">
+  <meta name="description" content="Catálogo de diseño gráfico, branding, redes sociales y desarrollo web con precios de referencia en Fusagasugá, Colombia. Soluciones creativas hechas a la medida.">
   <meta name="keywords" content="diseño gráfico Fusagasugá, branding Fusagasugá, desarrollo web Fusagasugá, diseño de redes sociales, Hafdio">
   <meta name="author" content="Hafdio">
   <meta name="robots" content="index, follow">
@@ -22,6 +22,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'none'; form-action https://wa.me">
   <link rel="canonical" href="./">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./pricing.css">
   <script src="./site-config.js" defer></script>
   <script src="./script.js" defer></script>
   <script type="application/ld+json">
@@ -52,7 +53,10 @@
           <h1 id="hero-title">Hafdio</h1>
           <p class="hero-tagline">Diseño y desarrollo hechos a la medida</p>
           <p class="hero-description">Identidades, piezas visuales y experiencias digitales que se sienten tuyas desde el primer vistazo.</p>
-          <a class="primary-cta" data-whatsapp href="https://wa.me/573014319858?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Hafdio" target="_blank" rel="noopener noreferrer"><span>Escríbeme por WhatsApp</span><span aria-hidden="true">↗</span></a>
+          <div class="hero-actions">
+            <a class="primary-cta" data-whatsapp href="https://wa.me/573014319858?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Hafdio" target="_blank" rel="noopener noreferrer"><span>Escríbeme por WhatsApp</span><span aria-hidden="true">↗</span></a>
+            <a class="secondary-cta" data-email href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=Hsaritamartinezv%40gmail.com&amp;su=Consulta%20sobre%20los%20servicios%20de%20Hafdio&amp;body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20dise%C3%B1o%20y%20desarrollo%20de%20Hafdio." target="_blank" rel="noopener noreferrer"><span>Escríbeme por Gmail</span><span aria-hidden="true">↗</span></a>
+          </div>
           <div class="availability-note"><span class="seal" aria-hidden="true">✦</span><span><strong>¿Tienes una idea?</strong><span data-availability>Escríbeme para coordinar horario</span></span></div>
         </div>
 
@@ -73,45 +77,189 @@
 
     <section class="services-section" id="diseno" aria-labelledby="design-title">
       <div class="section-shell">
-        <header class="section-heading reveal"><p class="eyebrow">01 — Diseño gráfico &amp; branding</p><h2 id="design-title">Una marca que se ve <em>tan bien</em> como trabaja.</h2><p>Abre cada tarjeta para ver todo lo que puede incluir tu proyecto.</p></header>
+        <header class="section-heading reveal">
+          <p class="eyebrow">01 — Diseño gráfico &amp; branding</p>
+          <h2 id="design-title">Una marca que se ve <em>tan bien</em> como trabaja.</h2>
+          <p>Abre cada categoría para conocer el alcance y los valores de referencia de cada servicio.</p>
+          <div class="pricing-notice"><span aria-hidden="true">✦</span><p><strong>Precios desde</strong> · Valores expresados en pesos colombianos (COP). El valor final se confirma según el alcance de cada proyecto.</p></div>
+        </header>
         <div class="category-grid">
           <details class="category-card reveal" open>
             <summary><span class="category-icon" aria-hidden="true">✦</span><span class="category-title"><small>01 / la base de todo</small><strong>Identidad de marca</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
-            <div class="category-content"><p class="category-intro">Antes de vender, tu marca tiene que verse como un negocio real, no como algo improvisado.</p><ul>
-              <li>Logo (simple o con variantes)</li><li>Paleta de colores + tipografías</li><li>Kit de Identidad de Marca — incluye: logo principal + 2 variantes, paleta de colores con códigos, 2 tipografías definidas y mini manual de uso (1-2 páginas)</li><li>Rebranding — para cuando ya tienes marca pero sientes que ya no te representa</li><li>Moodboards / guías de estilo visual</li>
+            <div class="category-content"><p class="category-intro">Antes de vender, tu marca tiene que verse como un negocio real, no como algo improvisado.</p><ul class="price-list">
+              <li class="price-item"><div><strong>Logo sencillo</strong><p>Incluye una propuesta principal y una versión final.</p></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Logo con variantes</strong><p>Incluye logo principal y hasta 2 variantes de distribución.</p></div><span class="price-tag">Desde $65.000</span></li>
+              <li class="price-item"><div><strong>Paleta de colores + tipografías</strong><p>Incluye selección de colores con códigos y combinación de hasta 2 tipografías.</p></div><span class="price-tag">Desde $20.000</span></li>
+              <li class="price-item"><div><strong>Kit básico de identidad de marca</strong><p>Incluye logo principal, 2 variantes, paleta de colores, 2 tipografías y mini manual de uso de 1 a 2 páginas.</p></div><span class="price-tag">Desde $100.000</span></li>
+              <li class="price-item"><div><strong>Rebranding básico</strong><p>Renovación visual de una identidad que ya existe.</p></div><span class="price-tag">Desde $75.000</span></li>
+              <li class="price-item"><div><strong>Rebranding con nuevas variantes y guía visual</strong></div><span class="price-tag">Desde $110.000</span></li>
+              <li class="price-item"><div><strong>Moodboard o tablero de inspiración</strong></div><span class="price-tag">Desde $18.000</span></li>
+              <li class="price-item"><div><strong>Guía de estilo visual sencilla</strong><p>Incluye colores, tipografías, referencias y estilo de imágenes.</p></div><span class="price-tag">Desde $30.000</span></li>
             </ul></div>
           </details>
+
           <details class="category-card reveal">
             <summary><span class="category-icon" aria-hidden="true">◌</span><span class="category-title"><small>02 / contenido que detiene el scroll</small><strong>Redes sociales</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
-            <div class="category-content"><p class="category-intro">La primera impresión de un cliente casi siempre es tu Instagram. Que valga la pena.</p><ul>
-              <li>Stories individuales o en paquete</li><li>Posts para feed</li><li>Carruseles informativos/educativos</li><li>Portadas de highlights</li><li>Calendario de contenido (planeación visual)</li><li>Kit de Redes — incluye: 5 plantillas editables (stories/posts), portada de highlights y calendario de contenido del mes</li><li>Overlays y paneles para streaming/creadores de contenido</li><li>Miniaturas que sí generan clics — thumbnails llamativos para YouTube/Twitch</li><li>Banners de perfil — para X, YouTube, Twitch o Facebook, listos para usar</li><li>Fotos de perfil con estilo — avatares o fotos editadas con la identidad de tu marca</li><li>Copys que enganchan — textos cortos y persuasivos para tus captions y CTAs</li><li>Anuncios pagados (Meta Ads) — piezas estáticas listas para pauta en Instagram/Facebook</li><li>Emotes y stickers para Twitch/Discord — para comunidades de streaming</li><li>GIFs y stickers para WhatsApp — contenido animado corto y fácil de compartir</li><li>QR personalizados con tu marca — hasta un código QR se ve como parte de tu identidad</li><li>Plantillas editables (Canva u otro) — para cuando quieras publicar tú misma sin depender de un diseñador</li>
+            <div class="category-content"><p class="category-intro">La primera impresión de un cliente casi siempre es tu Instagram. Que valga la pena.</p><ul class="price-list">
+              <li class="price-item"><div><strong>Story individual</strong></div><span class="price-tag">Desde $10.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 3 stories</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 5 stories</strong></div><span class="price-tag">Desde $38.000</span></li>
+              <li class="price-item"><div><strong>Post individual para feed</strong></div><span class="price-tag">Desde $15.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 3 posts</strong></div><span class="price-tag">Desde $40.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 5 posts</strong></div><span class="price-tag">Desde $65.000</span></li>
+              <li class="price-item"><div><strong>Carrusel de hasta 5 slides</strong></div><span class="price-tag">Desde $30.000</span></li>
+              <li class="price-item"><div><strong>Carrusel de hasta 8 slides</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Slide adicional para carrusel</strong></div><span class="price-tag">Desde $5.000</span></li>
+              <li class="price-item"><div><strong>Portadas de highlights, set de 4</strong></div><span class="price-tag">Desde $18.000</span></li>
+              <li class="price-item"><div><strong>Portadas de highlights, set de 6</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Calendario de contenido únicamente visual</strong><p>Incluye organización básica de las publicaciones.</p></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Calendario de contenido con ideas y planificación</strong></div><span class="price-tag">Desde $40.000</span></li>
+              <li class="price-item"><div><strong>Kit básico para redes</strong><p>Incluye 5 plantillas editables para posts o stories, portadas de highlights y calendario visual.</p></div><span class="price-tag">Desde $65.000</span></li>
+              <li class="price-item"><div><strong>Kit de redes ampliado</strong><p>Incluye 10 plantillas editables, portadas de highlights, banner y calendario visual.</p></div><span class="price-tag">Desde $110.000</span></li>
+              <li class="price-item"><div><strong>Overlay individual para streaming</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Paquete de overlay + 3 paneles</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Panel adicional para streaming</strong></div><span class="price-tag">Desde $8.000</span></li>
+              <li class="price-item"><div><strong>Pantalla de inicio, pausa o cierre para streaming</strong></div><span class="price-tag">Desde $20.000 cada una</span></li>
+              <li class="price-item"><div><strong>Miniatura individual para YouTube o Twitch</strong></div><span class="price-tag">Desde $18.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 3 miniaturas</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 5 miniaturas</strong></div><span class="price-tag">Desde $70.000</span></li>
+              <li class="price-item"><div><strong>Banner para YouTube, Twitch, X o Facebook</strong></div><span class="price-tag">Desde $20.000</span></li>
+              <li class="price-item"><div><strong>Adaptación del banner a otra red social</strong></div><span class="price-tag">Desde $8.000</span></li>
+              <li class="price-item"><div><strong>Foto de perfil editada con identidad visual</strong></div><span class="price-tag">Desde $15.000</span></li>
+              <li class="price-item"><div><strong>Avatar gráfico sencillo</strong></div><span class="price-tag">Desde $20.000</span></li>
+              <li class="price-item"><div><strong>Copy corto para publicación</strong></div><span class="price-tag">Desde $5.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 5 copys cortos</strong></div><span class="price-tag">Desde $20.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 10 copys cortos</strong></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Diseño de anuncio estático para Meta Ads</strong></div><span class="price-tag">Desde $18.000</span></li>
+              <li class="price-item"><div><strong>Adaptación del anuncio a otro tamaño o formato</strong></div><span class="price-tag">Desde $8.000</span></li>
+              <li class="price-item"><div><strong>Emote o sticker individual para Twitch o Discord</strong></div><span class="price-tag">Desde $8.000</span></li>
+              <li class="price-item"><div><strong>Set de 5 emotes o stickers</strong></div><span class="price-tag">Desde $30.000</span></li>
+              <li class="price-item"><div><strong>Set de 10 emotes o stickers</strong></div><span class="price-tag">Desde $55.000</span></li>
+              <li class="price-item"><div><strong>GIF o sticker animado sencillo</strong></div><span class="price-tag">Desde $20.000</span></li>
+              <li class="price-item"><div><strong>Código QR personalizado</strong></div><span class="price-tag">Desde $8.000</span></li>
+              <li class="price-item"><div><strong>Código QR con diseño completo de presentación</strong></div><span class="price-tag">Desde $15.000</span></li>
+              <li class="price-item"><div><strong>Plantilla editable individual para Canva</strong></div><span class="price-tag">Desde $12.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 5 plantillas editables</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 10 plantillas editables</strong></div><span class="price-tag">Desde $80.000</span></li>
             </ul></div>
           </details>
+
           <details class="category-card reveal">
             <summary><span class="category-icon" aria-hidden="true">◇</span><span class="category-title"><small>03 / que sí dan ganas de exponer</small><strong>Presentaciones y material educativo</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
-            <div class="category-content"><p class="category-intro">Ideal para estudiantes y profes: material que se ve bien y se entiende mejor.</p><ul>
-              <li>Presentaciones para tareas y exposiciones del colegio, con diseño temático, listas para editar</li><li>Presentaciones para clases (estilo elegante, a medida del tema)</li><li>Plantillas de clase reutilizables</li><li>Fichas/worksheets</li><li>Infografías</li><li>Guías de estudio visuales — resúmenes de temas convertidos en piezas fáciles de repasar</li>
+            <div class="category-content"><p class="category-intro">Ideal para estudiantes y profes: material que se ve bien y se entiende mejor.</p><ul class="price-list">
+              <li class="price-item"><div><strong>Presentación para tarea o exposición de hasta 8 diapositivas</strong><p>El cliente entrega el contenido organizado.</p></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Presentación para tarea o exposición de hasta 12 diapositivas</strong></div><span class="price-tag">Desde $50.000</span></li>
+              <li class="price-item"><div><strong>Presentación para clase de hasta 10 diapositivas</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Presentación para clase de hasta 15 diapositivas</strong></div><span class="price-tag">Desde $65.000</span></li>
+              <li class="price-item"><div><strong>Presentación para clase de hasta 20 diapositivas</strong></div><span class="price-tag">Desde $85.000</span></li>
+              <li class="price-item"><div><strong>Diapositiva adicional</strong></div><span class="price-tag">Desde $5.000</span></li>
+              <li class="price-item"><div><strong>Plantilla de clase reutilizable</strong></div><span class="price-tag">Desde $28.000</span></li>
+              <li class="price-item"><div><strong>Plantilla de presentación con portada y 5 diseños internos</strong></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Ficha o worksheet individual</strong></div><span class="price-tag">Desde $12.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 3 fichas o worksheets</strong></div><span class="price-tag">Desde $30.000</span></li>
+              <li class="price-item"><div><strong>Paquete de 5 fichas o worksheets</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Infografía individual</strong></div><span class="price-tag">Desde $22.000</span></li>
+              <li class="price-item"><div><strong>Infografía con gran cantidad de información</strong></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Guía de estudio visual de hasta 3 páginas</strong></div><span class="price-tag">Desde $30.000</span></li>
+              <li class="price-item"><div><strong>Guía de estudio visual de hasta 5 páginas</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Página adicional</strong></div><span class="price-tag">Desde $7.000</span></li>
+              <li class="price-item"><div><strong>Organización y resumen de contenido</strong></div><span class="price-tag">Desde $15.000 adicionales</span></li>
+              <li class="price-item"><div><strong>Investigación y redacción básica</strong></div><span class="price-tag">Desde $20.000 adicionales</span></li>
+              <li class="price-item"><div><strong>Investigación especializada o extensa</strong></div><span class="price-tag price-quote">Cotización según el tema y la cantidad de información.</span></li>
             </ul></div>
           </details>
+
           <details class="category-card reveal">
             <summary><span class="category-icon" aria-hidden="true">⌁</span><span class="category-title"><small>04 / para quienes cuentan historias</small><strong>Editorial</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
-            <div class="category-content"><ul><li>Rediseño de portadas de libros</li><li>Diagramación de documentos (PDFs, e-books)</li><li>Catálogos y menús de productos/servicios</li><li>Maquetación de revistas o fanzines pequeños</li></ul></div>
-          </details>
-          <details class="category-card reveal">
+            <div class="category-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Rediseño de portada de libro o e-book</strong></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Diseño de portada desde cero</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Diseño de portada y contraportada</strong></div><span class="price-tag">Desde $60.000</span></li>
+              <li class="price-item"><div><strong>Diagramación de documento de hasta 10 páginas</strong></div><span class="price-tag">Desde $50.000</span></li>
+              <li class="price-item"><div><strong>Diagramación de documento de hasta 20 páginas</strong></div><span class="price-tag">Desde $85.000</span></li>
+              <li class="price-item"><div><strong>Página adicional de diagramación</strong></div><span class="price-tag">Desde $5.000</span></li>
+              <li class="price-item"><div><strong>Diagramación de e-book de hasta 20 páginas</strong></div><span class="price-tag">Desde $90.000</span></li>
+              <li class="price-item"><div><strong>Diagramación de e-book de hasta 30 páginas</strong></div><span class="price-tag">Desde $125.000</span></li>
+              <li class="price-item"><div><strong>Catálogo de productos o servicios de hasta 6 páginas</strong></div><span class="price-tag">Desde $50.000</span></li>
+              <li class="price-item"><div><strong>Catálogo de hasta 10 páginas</strong></div><span class="price-tag">Desde $75.000</span></li>
+              <li class="price-item"><div><strong>Página adicional para catálogo</strong></div><span class="price-tag">Desde $6.000</span></li>
+              <li class="price-item"><div><strong>Menú de productos o servicios de una página</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Menú de productos o servicios de dos páginas</strong></div><span class="price-tag">Desde $38.000</span></li>
+              <li class="price-item"><div><strong>Menú extenso de hasta 4 páginas</strong></div><span class="price-tag">Desde $60.000</span></li>
+              <li class="price-item"><div><strong>Maquetación de revista o fanzine de hasta 8 páginas</strong></div><span class="price-tag">Desde $60.000</span></li>
+              <li class="price-item"><div><strong>Maquetación de revista o fanzine de hasta 12 páginas</strong></div><span class="price-tag">Desde $85.000</span></li>
+              <li class="price-item"><div><strong>Página adicional</strong></div><span class="price-tag">Desde $7.000</span></li>
+            </ul></div>
+          </details>          <details class="category-card reveal">
             <summary><span class="category-icon" aria-hidden="true">✉</span><span class="category-title"><small>05 / los detalles que se notan</small><strong>Papelería y aplicaciones</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
-            <div class="category-content"><ul><li>Tarjetas de presentación (digitales)</li><li>Firmas de WhatsApp/email</li><li>Invitaciones y tarjetas para eventos</li><li>Portafolio/web personal (landing simple)</li><li>Menús o listas de precios diseñados (como este mismo catálogo)</li></ul></div>
+            <div class="category-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Tarjeta de presentación digital por una cara</strong></div><span class="price-tag">Desde $15.000</span></li>
+              <li class="price-item"><div><strong>Tarjeta de presentación digital por ambas caras</strong></div><span class="price-tag">Desde $22.000</span></li>
+              <li class="price-item"><div><strong>Firma para WhatsApp o correo electrónico</strong></div><span class="price-tag">Desde $10.000</span></li>
+              <li class="price-item"><div><strong>Paquete de firma + foto de perfil</strong></div><span class="price-tag">Desde $22.000</span></li>
+              <li class="price-item"><div><strong>Invitación o tarjeta digital estática</strong></div><span class="price-tag">Desde $15.000</span></li>
+              <li class="price-item"><div><strong>Invitación personalizada con varias secciones</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Invitación animada sencilla</strong></div><span class="price-tag">Desde $30.000</span></li>
+              <li class="price-item"><div><strong>Menú o lista de precios de una página</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Menú o lista de precios de dos páginas</strong></div><span class="price-tag">Desde $38.000</span></li>
+              <li class="price-item"><div><strong>Catálogo de precios extenso</strong></div><span class="price-tag">Desde $50.000</span></li>
+              <li class="price-item"><div><strong>Hoja membreteada digital</strong></div><span class="price-tag">Desde $18.000</span></li>
+              <li class="price-item"><div><strong>Certificado digital personalizado</strong></div><span class="price-tag">Desde $15.000</span></li>
+              <li class="price-item"><div><strong>Plantilla editable para certificados</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Paquete de hasta 20 certificados con nombres diferentes</strong></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Generador sencillo de certificados</strong></div><span class="price-tag">Desde $100.000</span></li>
+            </ul></div>
           </details>
+
           <details class="category-card reveal">
             <summary><span class="category-icon" aria-hidden="true">⌘</span><span class="category-title"><small>06 / para negocios que quieren dar el salto digital</small><strong>UI/UX</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
-            <div class="category-content"><ul><li>Mockups y prototipos de interfaces (Figma)</li><li>Diseño de pantallas para apps/webs</li><li>Rediseño de una pantalla o flujo que ya tienes pero no está funcionando</li></ul></div>
+            <div class="category-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Mockup visual de una pantalla en Figma</strong></div><span class="price-tag">Desde $20.000</span></li>
+              <li class="price-item"><div><strong>Mockup de hasta 3 pantallas</strong></div><span class="price-tag">Desde $50.000</span></li>
+              <li class="price-item"><div><strong>Prototipo básico de hasta 3 pantallas</strong></div><span class="price-tag">Desde $55.000</span></li>
+              <li class="price-item"><div><strong>Prototipo básico de hasta 5 pantallas</strong></div><span class="price-tag">Desde $80.000</span></li>
+              <li class="price-item"><div><strong>Diseño de una pantalla para aplicación o web</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Pantalla adicional dentro del mismo proyecto</strong></div><span class="price-tag">Desde $18.000</span></li>
+              <li class="price-item"><div><strong>Rediseño visual de una pantalla existente</strong></div><span class="price-tag">Desde $28.000</span></li>
+              <li class="price-item"><div><strong>Rediseño de un flujo sencillo de hasta 3 pantallas</strong></div><span class="price-tag">Desde $70.000</span></li>
+              <li class="price-item"><div><strong>Prototipo interactivo entre pantallas</strong></div><span class="price-tag">Desde $20.000 adicionales</span></li>
+              <li class="price-item"><div><strong>Sistema básico de componentes visuales</strong><p>Botones, tarjetas, colores y tipografías.</p></div><span class="price-tag">Desde $40.000</span></li>
+            </ul></div>
           </details>
+
           <details class="category-card reveal">
             <summary><span class="category-icon" aria-hidden="true">✒</span><span class="category-title"><small>07 / el toque que nadie más tiene</small><strong>Ilustración y decoración</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
-            <div class="category-content"><ul><li>Ilustraciones de línea (ornamentos, íconos temáticos)</li><li>Sets de decoraciones a juego con la marca</li><li>Recursos descargables (wallpapers, planners imprimibles)</li><li>Stickers o elementos gráficos personalizados para WhatsApp/redes</li></ul></div>
+            <div class="category-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Ilustración de línea sencilla</strong></div><span class="price-tag">Desde $10.000</span></li>
+              <li class="price-item"><div><strong>Ornamento o elemento decorativo individual</strong></div><span class="price-tag">Desde $8.000</span></li>
+              <li class="price-item"><div><strong>Icono temático personalizado</strong></div><span class="price-tag">Desde $8.000</span></li>
+              <li class="price-item"><div><strong>Set de 4 decoraciones a juego</strong></div><span class="price-tag">Desde $28.000</span></li>
+              <li class="price-item"><div><strong>Set de 5 iconos temáticos</strong></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Set de decoraciones para una identidad de marca</strong></div><span class="price-tag">Desde $40.000</span></li>
+              <li class="price-item"><div><strong>Sticker o elemento gráfico individual</strong></div><span class="price-tag">Desde $8.000</span></li>
+              <li class="price-item"><div><strong>Set de 5 stickers estáticos</strong></div><span class="price-tag">Desde $30.000</span></li>
+              <li class="price-item"><div><strong>Set de 10 stickers estáticos</strong></div><span class="price-tag">Desde $55.000</span></li>
+              <li class="price-item"><div><strong>Wallpaper personalizado</strong></div><span class="price-tag">Desde $22.000</span></li>
+              <li class="price-item"><div><strong>Planner o recurso imprimible sencillo</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Paquete de recursos descargables</strong></div><span class="price-tag">Desde $40.000</span></li>
+              <li class="price-item"><div><strong>Ilustración de personaje sencilla</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Ilustración de personaje con fondo</strong></div><span class="price-tag">Desde $65.000</span></li>
+              <li class="price-item"><div><strong>Ilustración detallada o escena completa</strong></div><span class="price-tag price-quote">Cotización según la complejidad.</span></li>
+            </ul></div>
           </details>
+
           <details class="category-card reveal">
-            <summary><span class="category-icon" aria-hidden="true">▱</span><span class="category-title"><small>08 / packaging</small><strong>Packaging</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
-            <div class="category-content"><ul><li>Diseño de etiquetas simples</li><li>Diseño de bolsas o empaques simples para productos físicos</li></ul></div>
+            <summary><span class="category-icon" aria-hidden="true">▱</span><span class="category-title"><small>08 / presentación de producto</small><strong>Packaging</strong></span><span class="expand-icon" aria-hidden="true">＋</span></summary>
+            <div class="category-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Diseño de etiqueta sencilla</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Etiqueta frontal y posterior</strong></div><span class="price-tag">Desde $38.000</span></li>
+              <li class="price-item"><div><strong>Adaptación de etiqueta a otro tamaño</strong></div><span class="price-tag">Desde $10.000</span></li>
+              <li class="price-item"><div><strong>Diseño gráfico sencillo para bolsa</strong></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Diseño de empaque sencillo</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Diseño de frente y reverso de empaque</strong></div><span class="price-tag">Desde $60.000</span></li>
+              <li class="price-item"><div><strong>Diseño de varias caras del empaque</strong></div><span class="price-tag">Desde $80.000</span></li>
+              <li class="price-item"><div><strong>Mockup de presentación del empaque</strong></div><span class="price-tag">Desde $15.000</span></li>
+            </ul><p class="category-footnote"><span aria-hidden="true">✦</span> El valor corresponde al diseño gráfico. La impresión, fabricación, troqueles y pruebas físicas no están incluidos.</p></div>
           </details>
         </div>
         <div class="mid-cta reveal">
@@ -120,34 +268,183 @@
         </div>
       </div>
     </section>
-
     <section class="difference-section" id="diferencial" aria-labelledby="difference-title">
       <div class="difference-halo" aria-hidden="true"></div>
       <div class="section-shell difference-shell">
-        <header class="difference-heading reveal"><p class="eyebrow">El detalle que cambia todo</p><span class="difference-spark" aria-hidden="true">✦</span><h2 id="difference-title">Lo que nadie más<br><em>te ofrece</em></h2><p>Diseño que no se queda en verse bonito: también organiza, automatiza y hace crecer tu servicio.</p></header>
+        <header class="difference-heading reveal"><p class="eyebrow">09 — Servicios digitales especiales</p><span class="difference-spark" aria-hidden="true">✦</span><h2 id="difference-title">Lo que nadie más<br><em>te ofrece</em></h2><p>Diseño que no se queda en verse bonito: también organiza, automatiza y hace crecer tu servicio.</p></header>
         <div class="difference-grid">
-          <article class="difference-card reveal"><span>01</span><h3>Panel personalizado a la medida</h3><p>Un mini sistema hecho a tu marca (no una plantilla genérica) para llevar estudiantes, horarios, pagos y progreso en un solo lugar, con una vista clara de qué temas ya se vieron, cuáles faltan y para cuándo debería estar listo todo el proceso</p></article>
-          <article class="difference-card reveal"><span>02</span><h3>Mini web/landing personal</h3><p>Una página simple donde te encuentren, con horarios e info de contacto, sin depender solo de Instagram</p></article>
-          <article class="difference-card reveal"><span>03</span><h3>Certificados digitales personalizados</h3><p>Para entregar al terminar un nivel (A1, A2, etc.), algo que casi ningún profe particular ofrece</p></article>
-          <article class="difference-card reveal"><span>04</span><h3>Contenido animado simple</h3><p>Pequeñas animaciones para redes, más llamativas que una imagen estática</p></article>
-          <article class="difference-card reveal"><span>05</span><h3>Chatbot simple para WhatsApp/Instagram</h3><p>Respuestas automáticas a las preguntas que más te repiten, para que no tengas que estar ahí 24/7</p></article>
-          <article class="difference-card reveal"><span>06</span><h3>Sistema de referidos</h3><p>Una forma visual y clara de premiar a quien te recomiende clientes nuevos</p></article>
+          <article class="difference-card reveal">
+            <span>01 / SISTEMAS A MEDIDA</span><h3>Panel personalizado</h3><p>Un mini sistema hecho a tu marca para llevar información, horarios, estudiantes o tareas en un solo lugar.</p>
+            <ul class="offer-price-list">
+              <li><span><strong>Panel personalizado básico</strong><small>Sistema sencillo para organizar información, horarios, estudiantes o tareas.</small></span><b>Desde $220.000</b></li>
+              <li><span><strong>Panel personalizado con varias secciones</strong></span><b>Desde $300.000</b></li>
+              <li><span><strong>Panel con inicio de sesión o base de datos</strong></span><b>Desde $450.000</b></li>
+            </ul>
+          </article>
+          <article class="difference-card reveal">
+            <span>02 / PRESENCIA DIGITAL</span><h3>Mini web/landing personal</h3><p>Una página simple donde te encuentren, con horarios e información de contacto, sin depender solo de Instagram.</p>
+            <ul class="offer-price-list">
+              <li><span><strong>Mini web o landing personal</strong></span><b>Desde $160.000</b></li>
+              <li><span><strong>Landing para emprendimiento o negocio</strong></span><b>Desde $190.000</b></li>
+            </ul>
+          </article>
+          <article class="difference-card reveal">
+            <span>03 / LOGROS QUE SE COMPARTEN</span><h3>Certificados digitales personalizados</h3><p>Para entregar al terminar un nivel o proceso, con una presentación coherente con tu marca.</p>
+            <ul class="offer-price-list">
+              <li><span><strong>Certificados digitales personalizados</strong></span><b>Desde $15.000 por diseño</b></li>
+              <li><span><strong>Generador automático de certificados</strong></span><b>Desde $100.000</b></li>
+            </ul>
+          </article>
+          <article class="difference-card reveal">
+            <span>04 / MOVIMIENTO PARA TU MARCA</span><h3>Contenido animado sencillo</h3><p>Pequeñas animaciones para redes, más llamativas que una imagen estática.</p>
+            <ul class="offer-price-list">
+              <li><span><strong>Contenido animado sencillo para redes, hasta 10 segundos</strong></span><b>Desde $20.000</b></li>
+              <li><span><strong>Contenido animado sencillo de hasta 30 segundos</strong></span><b>Desde $40.000</b></li>
+            </ul>
+          </article>
+          <article class="difference-card reveal">
+            <span>05 / RESPUESTAS INTELIGENTES</span><h3>Chatbot para WhatsApp/Instagram</h3><p>Respuestas automáticas a las preguntas que más te repiten, para que no tengas que estar ahí 24/7.</p>
+            <ul class="offer-price-list">
+              <li><span><strong>Configuración básica de respuestas automáticas para WhatsApp o Instagram</strong></span><b>Desde $45.000</b></li>
+              <li><span><strong>Chatbot sencillo con preguntas y respuestas predefinidas</strong></span><b>Desde $120.000</b></li>
+              <li><span><strong>Chatbot con integraciones, inteligencia artificial o API externa</strong></span><b>Cotización personalizada desde $300.000</b></li>
+            </ul>
+          </article>
+          <article class="difference-card reveal">
+            <span>06 / CRECER EN COMUNIDAD</span><h3>Sistema de referidos</h3><p>Una forma visual y clara de premiar a quien te recomiende clientes nuevos.</p>
+            <ul class="offer-price-list">
+              <li><span><strong>Sistema visual de referidos</strong><small>Incluye diseño de tarjetas, códigos o material informativo.</small></span><b>Desde $35.000</b></li>
+              <li><span><strong>Sistema de referidos funcional con registro y seguimiento</strong></span><b>Desde $180.000</b></li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
     <section class="development-section" id="desarrollo" aria-labelledby="development-title">
       <div class="section-shell">
-        <header class="section-heading development-heading reveal"><p class="eyebrow">02 — Programación &amp; desarrollo</p><h2 id="development-title">Ideas que además de verse bien, <em>funcionan.</em></h2><p>Herramientas digitales ligeras, útiles y construidas para tu forma de trabajar.</p></header>
-        <div class="development-list">
-          <article class="development-row reveal"><span class="development-index">01</span><h3>Apps web personalizadas</h3><ul><li>Apps de productividad (habit trackers, Pomodoro, dashboards personales)</li><li>Apps con estética y gamificación</li><li>Herramientas de gestión de contenido a medida</li><li>Calculadoras o herramientas interactivas simples (ej. cotizador automático, test de nivel)</li></ul></article>
-          <article class="development-row reveal"><span class="development-index">02</span><h3>Sitios web</h3><ul><li>Portafolios personales con diseño único</li><li>Landing pages para negocios pequeños</li><li>Sitios con almacenamiento local para guardar datos sin backend</li></ul></article>
-          <article class="development-row reveal"><span class="development-index">03</span><h3>Organización digital</h3><ul><li>Sistemas completos en Notion (dashboards, trackers, CRM de clientes)</li><li>Automatización de flujos de trabajo simples</li></ul></article>
-          <article class="development-row reveal"><span class="development-index">04</span><h3>Stack</h3><ul><li>React, Vite, Tailwind, Zustand, Framer Motion, HTML/CSS/JS, Notion</li></ul></article>
+        <header class="section-heading development-heading reveal">
+          <p class="eyebrow">10 — Programación &amp; desarrollo web</p>
+          <h2 id="development-title">Ideas que además de verse bien, <em>funcionan.</em></h2>
+          <p>Herramientas digitales ligeras, útiles y construidas para tu forma de trabajar. Abre cada grupo para consultar sus valores.</p>
+          <div class="tech-pricing-note"><span aria-hidden="true">⌘</span><p><strong>Desarrollo a la medida</strong> · El precio final depende de funciones, contenido e integraciones. Todos los valores son de referencia en COP.</p></div>
+        </header>
+        <div class="development-pricing">
+          <details class="dev-price-card reveal" open>
+            <summary><span class="development-index">01</span><span class="dev-title"><small>Presencia digital</small><strong>Portafolios y sitios web</strong></span><span class="dev-expand" aria-hidden="true">＋</span></summary>
+            <div class="dev-price-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Portafolio web personal de una sola página</strong><p>Incluye diseño responsivo y secciones básicas.</p></div><span class="price-tag">Desde $160.000</span></li>
+              <li class="price-item"><div><strong>Landing page para servicio o emprendimiento</strong></div><span class="price-tag">Desde $190.000</span></li>
+              <li class="price-item"><div><strong>Landing personalizada con animaciones sencillas</strong></div><span class="price-tag">Desde $230.000</span></li>
+              <li class="price-item"><div><strong>Sitio web de hasta 3 páginas</strong></div><span class="price-tag">Desde $280.000</span></li>
+              <li class="price-item"><div><strong>Sitio web de hasta 5 páginas</strong></div><span class="price-tag">Desde $380.000</span></li>
+              <li class="price-item"><div><strong>Sección adicional</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Página adicional</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Formulario de contacto funcional</strong></div><span class="price-tag">Desde $25.000</span></li>
+              <li class="price-item"><div><strong>Integración sencilla con WhatsApp</strong></div><span class="price-tag">Desde $15.000</span></li>
+              <li class="price-item"><div><strong>Conexión de dominio</strong></div><span class="price-tag">Desde $20.000</span></li>
+              <li class="price-item"><div><strong>Publicación o despliegue del sitio</strong></div><span class="price-tag">Desde $30.000</span></li>
+            </ul><p class="tech-footnote"><span aria-hidden="true">✦</span> Dominio, hosting y plataformas de pago no están incluidos.</p></div>
+          </details>
+
+          <details class="dev-price-card reveal">
+            <summary><span class="development-index">02</span><span class="dev-title"><small>Herramientas propias</small><strong>Apps web personalizadas</strong></span><span class="dev-expand" aria-hidden="true">＋</span></summary>
+            <div class="dev-price-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Aplicación sencilla de productividad</strong><p>Ejemplo: lista de tareas, Pomodoro o habit tracker básico.</p></div><span class="price-tag">Desde $220.000</span></li>
+              <li class="price-item"><div><strong>Dashboard personal sencillo</strong></div><span class="price-tag">Desde $220.000</span></li>
+              <li class="price-item"><div><strong>Aplicación sencilla con estética y gamificación</strong></div><span class="price-tag">Desde $280.000</span></li>
+              <li class="price-item"><div><strong>Aplicación con varias vistas y almacenamiento local</strong></div><span class="price-tag">Desde $300.000</span></li>
+              <li class="price-item"><div><strong>Herramienta de gestión de contenido básica</strong></div><span class="price-tag">Desde $260.000</span></li>
+              <li class="price-item"><div><strong>Sistema sencillo para registrar clientes, estudiantes o actividades</strong></div><span class="price-tag">Desde $280.000</span></li>
+              <li class="price-item"><div><strong>Aplicación con inicio de sesión y base de datos</strong></div><span class="price-tag">Desde $450.000</span></li>
+              <li class="price-item"><div><strong>Aplicación con panel administrativo</strong></div><span class="price-tag">Desde $550.000</span></li>
+              <li class="price-item"><div><strong>Aplicación compleja o con múltiples usuarios</strong></div><span class="price-tag price-quote">Cotización personalizada.</span></li>
+            </ul></div>
+          </details>
+
+          <details class="dev-price-card reveal">
+            <summary><span class="development-index">03</span><span class="dev-title"><small>Resultados automáticos</small><strong>Calculadoras y herramientas interactivas</strong></span><span class="dev-expand" aria-hidden="true">＋</span></summary>
+            <div class="dev-price-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Calculadora web sencilla</strong></div><span class="price-tag">Desde $90.000</span></li>
+              <li class="price-item"><div><strong>Cotizador automático sencillo</strong></div><span class="price-tag">Desde $120.000</span></li>
+              <li class="price-item"><div><strong>Test o cuestionario con resultado automático</strong></div><span class="price-tag">Desde $110.000</span></li>
+              <li class="price-item"><div><strong>Test con diferentes rutas o resultados personalizados</strong></div><span class="price-tag">Desde $160.000</span></li>
+              <li class="price-item"><div><strong>Formulario interactivo con almacenamiento local</strong></div><span class="price-tag">Desde $140.000</span></li>
+              <li class="price-item"><div><strong>Herramienta interactiva personalizada</strong></div><span class="price-tag">Desde $150.000</span></li>
+            </ul></div>
+          </details>
+
+          <details class="dev-price-card reveal">
+            <summary><span class="development-index">04</span><span class="dev-title"><small>Datos en tu navegador</small><strong>Sitios con almacenamiento local</strong></span><span class="dev-expand" aria-hidden="true">＋</span></summary>
+            <div class="dev-price-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Sitio que guarda preferencias o información en el navegador</strong></div><span class="price-tag">Desde $220.000</span></li>
+              <li class="price-item"><div><strong>Tracker o dashboard con almacenamiento local</strong></div><span class="price-tag">Desde $250.000</span></li>
+              <li class="price-item"><div><strong>Sistema local para guardar registros sin servidor</strong></div><span class="price-tag">Desde $280.000</span></li>
+              <li class="price-item"><div><strong>Exportación de datos a archivo</strong></div><span class="price-tag">Desde $40.000 adicionales</span></li>
+            </ul></div>
+          </details>          <details class="dev-price-card reveal">
+            <summary><span class="development-index">05</span><span class="dev-title"><small>Organización conectada</small><strong>Sistemas en Notion</strong></span><span class="dev-expand" aria-hidden="true">＋</span></summary>
+            <div class="dev-price-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Dashboard personal básico</strong></div><span class="price-tag">Desde $45.000</span></li>
+              <li class="price-item"><div><strong>Sistema de organización con varias bases de datos</strong></div><span class="price-tag">Desde $75.000</span></li>
+              <li class="price-item"><div><strong>Sistema completo para clientes, tareas y proyectos</strong></div><span class="price-tag">Desde $110.000</span></li>
+              <li class="price-item"><div><strong>CRM básico en Notion</strong></div><span class="price-tag">Desde $90.000</span></li>
+              <li class="price-item"><div><strong>Sistema personalizado con fórmulas, relaciones y vistas</strong></div><span class="price-tag">Desde $120.000</span></li>
+              <li class="price-item"><div><strong>Plantilla de Notion vendible o reutilizable</strong></div><span class="price-tag">Desde $60.000</span></li>
+            </ul></div>
+          </details>
+
+          <details class="dev-price-card reveal">
+            <summary><span class="development-index">06</span><span class="dev-title"><small>Menos tareas repetidas</small><strong>Automatizaciones</strong></span><span class="dev-expand" aria-hidden="true">＋</span></summary>
+            <div class="dev-price-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Automatización sencilla de un flujo de trabajo</strong></div><span class="price-tag">Desde $80.000</span></li>
+              <li class="price-item"><div><strong>Automatización entre dos herramientas</strong></div><span class="price-tag">Desde $120.000</span></li>
+              <li class="price-item"><div><strong>Automatización con formularios y hojas de cálculo</strong></div><span class="price-tag">Desde $130.000</span></li>
+              <li class="price-item"><div><strong>Automatización con correos o notificaciones</strong></div><span class="price-tag">Desde $150.000</span></li>
+              <li class="price-item"><div><strong>Automatización con API o plataforma externa</strong></div><span class="price-tag">Desde $200.000</span></li>
+            </ul><p class="tech-footnote"><span aria-hidden="true">✦</span> Las suscripciones o cobros de herramientas externas son asumidos por el cliente.</p></div>
+          </details>
+
+          <details class="dev-price-card reveal">
+            <summary><span class="development-index">07</span><span class="dev-title"><small>Tu proyecto al día</small><strong>Mantenimiento y cambios</strong></span><span class="dev-expand" aria-hidden="true">＋</span></summary>
+            <div class="dev-price-content"><ul class="price-list">
+              <li class="price-item"><div><strong>Corrección sencilla de errores visuales</strong></div><span class="price-tag">Desde $20.000</span></li>
+              <li class="price-item"><div><strong>Corrección de error de programación</strong></div><span class="price-tag">Desde $30.000</span></li>
+              <li class="price-item"><div><strong>Cambio o función pequeña</strong></div><span class="price-tag">Desde $35.000</span></li>
+              <li class="price-item"><div><strong>Hora adicional de desarrollo</strong></div><span class="price-tag">Desde $15.000</span></li>
+              <li class="price-item"><div><strong>Mantenimiento básico mensual</strong></div><span class="price-tag">Desde $60.000</span></li>
+              <li class="price-item"><div><strong>Mantenimiento mensual con actualizaciones frecuentes</strong></div><span class="price-tag">Desde $100.000</span></li>
+              <li class="price-item"><div><strong>Soporte o capacitación para usar el sistema</strong></div><span class="price-tag">Desde $20.000 por sesión</span></li>
+            </ul></div>
+          </details>
         </div>
+
+        <details class="additional-values reveal">
+          <summary><span><small>Condiciones y complementos</small><strong>Valores adicionales</strong></span><span class="dev-expand" aria-hidden="true">＋</span></summary>
+          <div class="additional-values-content"><ul class="price-list">
+            <li class="price-item"><div><strong>Ronda adicional de ajustes de diseño</strong></div><span class="price-tag">Desde $8.000</span></li>
+            <li class="price-item"><div><strong>Ronda adicional de ajustes en programación</strong></div><span class="price-tag">Desde $20.000</span></li>
+            <li class="price-item"><div><strong>Cambio completo de estilo o concepto</strong></div><span class="price-tag price-quote">Se cotiza como una nueva solicitud.</span></li>
+            <li class="price-item"><div><strong>Entrega urgente en menos de 48 horas</strong></div><span class="price-tag">Recargo del 25 %</span></li>
+            <li class="price-item"><div><strong>Entrega urgente el mismo día</strong><p>Sujeto a disponibilidad.</p></div><span class="price-tag">Recargo del 40 %</span></li>
+            <li class="price-item"><div><strong>Búsqueda y organización de contenido</strong></div><span class="price-tag">Desde $15.000 adicionales</span></li>
+            <li class="price-item"><div><strong>Redacción de contenido</strong></div><span class="price-tag">Desde $20.000 adicionales</span></li>
+            <li class="price-item"><div><strong>Entrega de archivos editables</strong><p>Incluida cuando el servicio es una plantilla. En otros proyectos puede generar un recargo.</p></div><span class="price-tag">15 %</span></li>
+            <li class="price-item"><div><strong>Adaptación a otro formato</strong></div><span class="price-tag">Desde $8.000</span></li>
+            <li class="price-item"><div><strong>Carga de contenido extenso</strong></div><span class="price-tag">Desde $20.000</span></li>
+            <li class="price-item"><div><strong>Función adicional de programación</strong></div><span class="price-tag">Desde $30.000</span></li>
+            <li class="price-item"><div><strong>Pantalla adicional</strong></div><span class="price-tag">Desde $25.000</span></li>
+            <li class="price-item"><div><strong>Integración con herramienta o servicio externo</strong></div><span class="price-tag">Desde $70.000</span></li>
+            <li class="price-item"><div><strong>Inicio de sesión</strong></div><span class="price-tag">Desde $100.000</span></li>
+            <li class="price-item"><div><strong>Base de datos</strong></div><span class="price-tag">Desde $120.000</span></li>
+            <li class="price-item"><div><strong>Panel administrativo</strong></div><span class="price-tag">Desde $150.000</span></li>
+            <li class="price-item"><div><strong>Pasarela de pagos</strong><p>Sin incluir las tarifas de la plataforma.</p></div><span class="price-tag">Desde $150.000</span></li>
+          </ul></div>
+        </details>
+
+        <div class="tech-stack-note reveal"><span>Stack técnico</span><p>React · Vite · Tailwind · Zustand · Framer Motion · HTML · CSS · JavaScript · Notion</p></div>
       </div>
       <div class="code-ribbon" aria-label="Tecnologías utilizadas"><span>React</span><i>✦</i><span>Vite</span><i>✦</i><span>Tailwind</span><i>✦</i><span>HTML · CSS · JS</span><i>✦</i><span>Notion</span></div>
     </section>
-
     <section class="testimonials-section" id="testimonios" aria-labelledby="testimonials-title">
       <div class="section-shell">
         <header class="section-heading reveal"><p class="eyebrow">03 — Prueba social</p><h2 id="testimonials-title">Cuando el trabajo habla<br><em>por sí solo.</em></h2></header>
@@ -165,7 +462,7 @@
         <div class="footer-brand reveal"><span class="footer-mark" aria-hidden="true">H</span><p class="eyebrow">Hagamos algo inolvidable</p><h2>Hafdio</h2><p>Diseño gráfico y desarrollo digital desde <span data-city>Fusagasugá, Colombia</span>.</p></div>
         <div class="footer-contact reveal">
           <a class="primary-cta" data-whatsapp href="https://wa.me/573014319858?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20Hafdio" target="_blank" rel="noopener noreferrer"><span>Escríbeme por WhatsApp</span><span aria-hidden="true">↗</span></a>
-          <a class="email-link" data-email href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=Hsaritamartinezv%40gmail.com&amp;su=Consulta%20sobre%20los%20servicios%20de%20Hafdio&amp;body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20dise%C3%B1o%20y%20desarrollo%20de%20Hafdio." target="_blank" rel="noopener noreferrer">Hsaritamartinezv@gmail.com</a>
+          <a class="email-link" data-email data-email-address href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=Hsaritamartinezv%40gmail.com&amp;su=Consulta%20sobre%20los%20servicios%20de%20Hafdio&amp;body=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20servicios%20de%20dise%C3%B1o%20y%20desarrollo%20de%20Hafdio." target="_blank" rel="noopener noreferrer">Hsaritamartinezv@gmail.com</a>
           <p data-availability>Escríbeme para coordinar horario</p>
         </div>
         <div class="footer-bottom"><span>© <span data-current-year>2026</span> <span data-business-name>Hafdio</span></span><span>Diseño y desarrollo hechos a la medida</span><a href="#inicio">Volver arriba ↑</a></div>

@@ -26,7 +26,7 @@
   gmailComposeUrl.searchParams.set("body", config.emailBody);
 
   document.querySelectorAll("[data-email]").forEach((element) => {
-    element.textContent = config.email;
+    if (element.hasAttribute("data-email-address")) element.textContent = config.email;
     element.href = gmailComposeUrl.toString();
     element.target = "_blank";
     element.rel = "noopener noreferrer";
