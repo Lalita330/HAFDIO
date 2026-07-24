@@ -733,15 +733,6 @@
   list-style: none;
 }
 
-.process-grid::before {
-  content: "";
-  position: absolute;
-  top: 2.5rem;
-  bottom: 2.5rem;
-  left: 2.1rem;
-  border-left: 1px dotted rgba(201, 166, 107, 0.42);
-}
-
 .process-card {
   position: relative;
   display: grid;
@@ -810,15 +801,6 @@
   .process-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.35rem;
-  }
-
-  .process-grid::before {
-    top: 2.75rem;
-    right: 2.75rem;
-    bottom: auto;
-    left: 2.75rem;
-    border-top: 1px dotted rgba(201, 166, 107, 0.42);
-    border-left: 0;
   }
 
   .process-card:nth-child(even) {
