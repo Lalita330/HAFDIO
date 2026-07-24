@@ -36,6 +36,20 @@
     element.textContent = String(new Date().getFullYear());
   });
 
+  const revealGroups = document.querySelectorAll(
+    ".hero-grid, .category-grid, .difference-grid, .development-pricing, .footer-inner"
+  );
+
+  revealGroups.forEach((group) => {
+    const directRevealChildren = Array.from(group.children).filter((element) =>
+      element.classList.contains("reveal")
+    );
+
+    directRevealChildren.forEach((element, index) => {
+      element.style.setProperty("--reveal-delay", `${(index % 3) * 90}ms`);
+      element.style.setProperty("--reveal-x", `${index % 2 === 0 ? -12 : 12}px`);
+    });
+  });
   const revealElements = document.querySelectorAll(".reveal");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -49,7 +63,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: "0px 0px -24px" });
+    }, { threshold: 0.08, rootMargin: "0px 0px -10%" });
 
     revealElements.forEach((element) => observer.observe(element));
   }
