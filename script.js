@@ -55,7 +55,7 @@
   window.addEventListener("resize", updateScrollProgress);
   updateScrollProgress();
   const revealGroups = document.querySelectorAll(
-    ".hero-grid, .category-grid, .difference-grid, .development-pricing, .footer-inner"
+    ".hero-grid, .category-grid, .difference-grid, .development-pricing, .process-grid, .footer-inner"
   );
 
   revealGroups.forEach((group) => {
