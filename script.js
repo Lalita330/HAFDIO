@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const config = window.NOCTHRYN_CONFIG || {};
+  const config = window.HAFDIO_CONFIG || {};
   const whatsappUrl = `https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(config.whatsappMessage)}`;
 
   document.querySelectorAll("[data-whatsapp]").forEach((link) => {
@@ -18,9 +18,19 @@
   document.querySelectorAll("[data-availability]").forEach((element) => {
     element.textContent = config.availability;
   });
+  const gmailComposeUrl = new URL("https://mail.google.com/mail/");
+  gmailComposeUrl.searchParams.set("view", "cm");
+  gmailComposeUrl.searchParams.set("fs", "1");
+  gmailComposeUrl.searchParams.set("to", config.email);
+  gmailComposeUrl.searchParams.set("su", config.emailSubject);
+  gmailComposeUrl.searchParams.set("body", config.emailBody);
+
   document.querySelectorAll("[data-email]").forEach((element) => {
     element.textContent = config.email;
-    element.href = `mailto:${config.email}`;
+    element.href = gmailComposeUrl.toString();
+    element.target = "_blank";
+    element.rel = "noopener noreferrer";
+    element.setAttribute("aria-label", "Abrir Gmail para escribir a " + config.email);
   });
   document.querySelectorAll("[data-current-year]").forEach((element) => {
     element.textContent = String(new Date().getFullYear());

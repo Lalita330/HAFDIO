@@ -1,6 +1,6 @@
-# Nocthryn Studio — catálogo web
+# Hafdio — catálogo web
 
-Sitio estático independiente para Nocthryn Studio. No necesita Codex, servidor, base de datos ni claves de API.
+Sitio estático independiente para Hafdio. No necesita Codex, servidor, base de datos ni claves de API.
 
 ## Datos editables
 
@@ -20,12 +20,12 @@ Puedes abrir `index.html` directamente o iniciar cualquier servidor estático. T
 
 ## Publicar en GitHub Pages
 
-1. Crea en GitHub un repositorio vacío llamado `nocthryn-studio`.
+1. Crea en GitHub un repositorio vacío llamado `hafdio`.
 2. Desde PowerShell, dentro de esta carpeta, agrega el repositorio remoto y sube la rama `main`.
 3. En GitHub abre **Settings → Pages** y elige **GitHub Actions** como fuente.
 4. El flujo **Publicar en GitHub Pages** desplegará automáticamente el sitio. También puedes ejecutarlo manualmente desde la pestaña **Actions**.
 
-La URL final tendrá el formato `https://TU_USUARIO.github.io/nocthryn-studio/`.
+La URL final tendrá el formato `https://TU_USUARIO.github.io/hafdio/`.
 
 ## Seguridad
 
