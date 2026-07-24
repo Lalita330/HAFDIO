@@ -817,3 +817,54 @@
     margin-top: 2.25rem;
   }
 }
+
+/* Integración del logo principal de Hafdio. */
+.mini-logo-mark {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  flex: none;
+  object-fit: cover;
+  border: 1px solid rgba(201, 166, 107, 0.72);
+  border-radius: 50% 50% 44% 44%;
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.28);
+}
+
+.hero .hero-logo-title {
+  width: min(100%, 43rem);
+  max-width: none;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.hero-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.45rem;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.22);
+}
+
+.footer-logo-mark {
+  display: block;
+  width: 4.6rem;
+  height: 4.6rem;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  border: 1px solid #6c562f;
+  border-radius: 50% 50% 42% 42%;
+  box-shadow: 0 12px 28px rgba(5, 7, 12, 0.18);
+}
+
+@media (max-width: 430px) {
+  .mini-logo-mark {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .hero .hero-logo-title {
+    width: calc(100% + 0.25rem);
+    margin-left: -0.125rem;
+  }
+}

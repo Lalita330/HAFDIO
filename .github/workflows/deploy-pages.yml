@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p _site/assets
           cp index.html styles.css pricing.css script.js site-config.js .nojekyll _site/
-          cp assets/hafdio-editorial.jpg assets/og-hafdio.jpg _site/assets/
+          cp assets/* _site/assets/
 
       - name: Subir sitio
         uses: actions/upload-pages-artifact@v3
