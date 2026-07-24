@@ -36,6 +36,24 @@
     element.textContent = String(new Date().getFullYear());
   });
 
+  const scrollProgress = document.querySelector(".scroll-progress");
+  let progressFramePending = false;
+
+  const updateScrollProgress = () => {
+    const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollableHeight > 0 ? window.scrollY / scrollableHeight : 0;
+    scrollProgress?.style.setProperty("--scroll-progress", String(Math.min(1, Math.max(0, progress))));
+    progressFramePending = false;
+  };
+
+  window.addEventListener("scroll", () => {
+    if (!progressFramePending) {
+      progressFramePending = true;
+      window.requestAnimationFrame(updateScrollProgress);
+    }
+  }, { passive: true });
+  window.addEventListener("resize", updateScrollProgress);
+  updateScrollProgress();
   const revealGroups = document.querySelectorAll(
     ".hero-grid, .category-grid, .difference-grid, .development-pricing, .footer-inner"
   );
@@ -46,8 +64,8 @@
     );
 
     directRevealChildren.forEach((element, index) => {
-      element.style.setProperty("--reveal-delay", `${(index % 3) * 90}ms`);
-      element.style.setProperty("--reveal-x", `${index % 2 === 0 ? -12 : 12}px`);
+      element.style.setProperty("--reveal-delay", `${(index % 3) * 120}ms`);
+      element.style.setProperty("--reveal-x", `${index % 2 === 0 ? -24 : 24}px`);
     });
   });
   const revealElements = document.querySelectorAll(".reveal");
@@ -63,7 +81,7 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.08, rootMargin: "0px 0px -10%" });
+    }, { threshold: 0.04, rootMargin: "0px 0px -64px" });
 
     revealElements.forEach((element) => observer.observe(element));
   }
