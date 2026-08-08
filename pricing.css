@@ -927,6 +927,11 @@ quantity-price-selector {
   color: var(--ivory);
   font-size: clamp(1.65rem, 6vw, 2.35rem);
   line-height: 1;
+  overflow-wrap: anywhere;
+}
+
+.process-card > div {
+  min-width: 0;
 }
 
 .process-card p {
@@ -951,10 +956,22 @@ quantity-price-selector {
 @media (min-width: 1040px) {
   .process-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(1rem, 1.6vw, 1.5rem);
   }
 
   .process-card:nth-child(even) {
     margin-top: 2.25rem;
+  }
+
+  .process-card {
+    grid-template-columns: 3rem minmax(0, 1fr);
+    gap: 0.8rem;
+    padding: clamp(1rem, 1.4vw, 1.35rem);
+  }
+
+  .process-card h3 {
+    font-size: clamp(1.55rem, 1.85vw, 2rem);
+    line-height: 1.05;
   }
 }
 

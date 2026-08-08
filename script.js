@@ -61,6 +61,23 @@
     customElements.define("quantity-price-selector", QuantityPriceSelector);
   }
 
+  document.querySelectorAll(".pricing-catalog .price-item").forEach((priceItem) => {
+    if (priceItem.querySelector("quantity-price-selector")) return;
+
+    const fixedPrice = priceItem.querySelector(":scope > .price-tag:not(.price-quote)");
+    const serviceName = priceItem.querySelector(":scope > div > strong")?.textContent?.trim();
+    const numericPrice = fixedPrice?.textContent?.match(/\$\s*([\d.]+)/)?.[1];
+    const unitPrice = numericPrice ? Number(numericPrice.replaceAll(".", "")) : 0;
+
+    if (!fixedPrice || !serviceName || !Number.isFinite(unitPrice) || unitPrice <= 0) return;
+
+    const selector = document.createElement("quantity-price-selector");
+    selector.setAttribute("unit-price", String(unitPrice));
+    selector.setAttribute("label", serviceName);
+    priceItem.classList.add("price-item-selector");
+    fixedPrice.replaceWith(selector);
+  });
+
   document.querySelectorAll("[data-whatsapp]").forEach((link) => {
     link.href = whatsappUrl;
     link.setAttribute("aria-label", "Escríbeme por WhatsApp; abre una conversación nueva");
