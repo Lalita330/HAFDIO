@@ -4,6 +4,63 @@
   const config = window.HAFDIO_CONFIG || {};
   const whatsappUrl = `https://wa.me/${config.whatsappNumber}?text=${encodeURIComponent(config.whatsappMessage)}`;
 
+  const formatCOP = (value) => `$${Math.round(value).toLocaleString("es-CO")}`;
+
+  class QuantityPriceSelector extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.ready === "true") return;
+
+      const unitPrice = Number(this.getAttribute("unit-price"));
+      const parsedMin = Number.parseInt(this.getAttribute("min-qty") || "1", 10);
+      const minQty = Number.isFinite(parsedMin) ? Math.max(1, parsedMin) : 1;
+      const label = this.getAttribute("label") || "servicio";
+
+      if (!Number.isFinite(unitPrice) || unitPrice <= 0) return;
+
+      this.dataset.ready = "true";
+      this.innerHTML = `
+        <div class="quantity-price-top">
+          <span class="quantity-unit">${formatCOP(unitPrice)} c/u</span>
+          <div class="quantity-stepper" role="group" aria-label="Cantidad de ${label}">
+            <button class="quantity-button quantity-minus" type="button" aria-label="Restar una unidad de ${label}">−</button>
+            <input class="quantity-input" type="number" inputmode="numeric" min="${minQty}" step="1" value="${minQty}" aria-label="Cantidad de ${label}">
+            <button class="quantity-button quantity-plus" type="button" aria-label="Agregar una unidad de ${label}">+</button>
+          </div>
+        </div>
+        ${minQty > 1 ? `<span class="quantity-minimum">Mínimo ${minQty}</span>` : ""}
+        <strong class="quantity-total" aria-live="polite"></strong>
+      `;
+
+      const input = this.querySelector(".quantity-input");
+      const minusButton = this.querySelector(".quantity-minus");
+      const plusButton = this.querySelector(".quantity-plus");
+      const totalElement = this.querySelector(".quantity-total");
+
+      const updateTotal = (requestedQty) => {
+        const quantity = Math.max(minQty, Number.parseInt(requestedQty, 10) || minQty);
+        const discountRate = quantity >= 5 ? 0.15 : quantity >= 3 ? 0.1 : 0;
+        const total = unitPrice * quantity * (1 - discountRate);
+        const discountText = discountRate > 0 ? ` (${discountRate * 100}% dto. aplicado)` : "";
+
+        input.value = String(quantity);
+        minusButton.disabled = quantity <= minQty;
+        totalElement.textContent = `Total: ${formatCOP(total)}${discountText}`;
+      };
+
+      minusButton.addEventListener("click", () => updateTotal(Number(input.value) - 1));
+      plusButton.addEventListener("click", () => updateTotal(Number(input.value) + 1));
+      input.addEventListener("input", () => {
+        if (input.value !== "") updateTotal(input.value);
+      });
+      input.addEventListener("change", () => updateTotal(input.value));
+      updateTotal(minQty);
+    }
+  }
+
+  if (!customElements.get("quantity-price-selector")) {
+    customElements.define("quantity-price-selector", QuantityPriceSelector);
+  }
+
   document.querySelectorAll("[data-whatsapp]").forEach((link) => {
     link.href = whatsappUrl;
     link.setAttribute("aria-label", "Escríbeme por WhatsApp; abre una conversación nueva");
@@ -55,7 +112,7 @@
   window.addEventListener("resize", updateScrollProgress);
   updateScrollProgress();
   const revealGroups = document.querySelectorAll(
-    ".hero-grid, .category-grid, .difference-grid, .development-pricing, .process-grid, .footer-inner"
+    ".hero-grid, .category-grid, .development-pricing, .process-grid, .footer-inner"
   );
 
   revealGroups.forEach((group) => {
