@@ -59,7 +59,7 @@
     customElements.define("quantity-price-selector", QuantityPriceSelector);
   }
 
-  document.querySelectorAll(".pricing-catalog .price-item").forEach((priceItem) => {
+  document.querySelectorAll(".pricing-catalog .price-item, .development-section .price-item").forEach((priceItem) => {
     if (priceItem.querySelector("quantity-price-selector")) return;
 
     const fixedPrice = priceItem.querySelector(":scope > .price-tag:not(.price-quote)");

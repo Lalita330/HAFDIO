@@ -570,6 +570,29 @@ quantity-price-selector {
   background: var(--tech-aqua);
 }
 
+.development-section .quantity-unit,
+.development-section .quantity-button {
+  color: var(--tech-aqua);
+}
+
+.development-section .quantity-stepper {
+  border-color: rgba(95, 211, 196, 0.5);
+}
+
+.development-section .quantity-input {
+  border-color: rgba(95, 211, 196, 0.28);
+}
+
+.development-section .quantity-button:hover:not(:disabled) {
+  color: var(--tech-night);
+  background: var(--tech-aqua);
+}
+
+.development-section .quantity-total {
+  border-color: rgba(95, 211, 196, 0.35);
+  color: var(--tech-ivory);
+}
+
 .tech-footnote {
   border-left-color: var(--tech-gold);
   color: rgba(244, 239, 228, 0.66);
@@ -640,17 +663,25 @@ quantity-price-selector {
     justify-self: start;
   }
 
-  .category-card[open] quantity-price-selector {
+  .category-card[open] quantity-price-selector,
+  .dev-price-card[open] quantity-price-selector,
+  .additional-values[open] quantity-price-selector {
     width: 100%;
     justify-self: stretch;
   }
 
-  .category-card[open] .quantity-price-top {
+  .category-card[open] .quantity-price-top,
+  .dev-price-card[open] .quantity-price-top,
+  .additional-values[open] .quantity-price-top {
     justify-content: space-between;
   }
 
   .category-card[open] .quantity-minimum,
-  .category-card[open] .quantity-total {
+  .category-card[open] .quantity-total,
+  .dev-price-card[open] .quantity-minimum,
+  .dev-price-card[open] .quantity-total,
+  .additional-values[open] .quantity-minimum,
+  .additional-values[open] .quantity-total {
     justify-self: start;
     text-align: left;
   }
