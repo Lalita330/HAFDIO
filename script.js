@@ -127,7 +127,7 @@
   window.addEventListener("resize", updateScrollProgress);
   updateScrollProgress();
   const revealGroups = document.querySelectorAll(
-    ".hero-grid, .category-grid, .development-pricing, .process-grid, .footer-inner"
+    ".hero-grid, .category-grid, .monthly-plans-grid, .development-pricing, .process-grid, .footer-inner"
   );
 
   revealGroups.forEach((group) => {
