@@ -38,13 +38,11 @@
 
       const updateTotal = (requestedQty) => {
         const quantity = Math.max(minQty, Number.parseInt(requestedQty, 10) || minQty);
-        const discountRate = quantity >= 5 ? 0.15 : quantity >= 3 ? 0.1 : 0;
-        const total = unitPrice * quantity * (1 - discountRate);
-        const discountText = discountRate > 0 ? ` (${discountRate * 100}% dto. aplicado)` : "";
+        const total = unitPrice * quantity;
 
         input.value = String(quantity);
         minusButton.disabled = quantity <= minQty;
-        totalElement.textContent = `Total: ${formatCOP(total)}${discountText}`;
+        totalElement.textContent = `Total: ${formatCOP(total)}`;
       };
 
       minusButton.addEventListener("click", () => updateTotal(Number(input.value) - 1));
